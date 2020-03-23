@@ -1,18 +1,18 @@
 # GIS_Spyder
 
-# How to install Spyder using Conda that comes with ArcGIS Pro
+## How to install Spyder using Conda that comes with ArcGIS Pro
 
 This document will give you step by step instructions for installing Spyder and all of its dependencies using the Conda Python package and environment manager that comes with ArcGIS Pro.
 
-## How I did it...
+### How I did it...
 
 I started this process with a fresh Windows 10 OS with not much else installed except for VS Code. I have a suspicion that having other Conda installations (i.e. Conda that comes with Anaconda) might bungle things up, so it's better to start fresh.
 
-## 1. Install ArcGIS Pro version 1.1 and upgraded fully to 2.4.2
+### 1. Install ArcGIS Pro version 1.1 and upgraded fully to 2.4.2
 
 This is pretty self explanatory. Just do it and then we can begin the real fun.
 
-## 2. Clone the base "arcgispro-py3" environment
+### 2. Clone the base "arcgispro-py3" environment
 
 We're going to execute this from the command line instead of the ArcGIS Pro UI Conda implementation simply because it seems to take MUCH longer that way. It also seems to be more error prone.
 
@@ -37,7 +37,7 @@ You can choose anything for `[your env name]`. I chose "dev" (note, I didn't inc
 
 It should gather and install a load of packages. If it stalls and doesn't seem to be doing anything for a time, BE PATIENT! *It is working*. I got a couple of debug messages during the "arcgis-1.6.1-p" package, but the environment ended up validating as "ok", so I'm in business!
 
-## 3. Activate new env and install spyder
+### 3. Activate new env and install spyder
 
 Type and enter: `activate [EnvName]`
 
@@ -47,7 +47,7 @@ It will take a minute for it to fetch the package metadata and specifications, a
 
 I got a couple more debug messages but hopefully everything will be okay.
 
-## 4. Run Spyder and import arcpy or arcgis packages
+### 4. Run Spyder and import arcpy or arcgis packages
 
 Type and enter: `call spyder`
 
@@ -57,7 +57,7 @@ Spyder should launch. Note it should say "Spyder (Python 3.6) on the top banner.
 
 If there were no errors then they should have imported fine!
 
-## 5. Create batch script to automatically launch Spyder
+### 5. Create batch script to automatically launch Spyder
 
 Close spyder. Open your favorite text editor and create a file called "Spyder_Pro.bat". Copy the text below into the file and save it. Test it by double clicking on the .bat file and it should launch Spyder. VOILA!
 
